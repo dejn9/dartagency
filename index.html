@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="assets/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-facebook" viewBox="0 0 32 32">
+                <title>facebook</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+            <symbol id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+                </path>
+                <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                </path>
+                <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                </path>
+            </symbol>
+            <symbol id="icon-twitter" viewBox="0 0 32 32">
+                <title>twitter</title>
+                <path
+                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+                </path>
+            </symbol>
+            <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+                <title>linkedin2</title>
+                <path
+                    d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z">
+                </path>
+                <path d="M2 12h6v18h-6v-18z"></path>
+                <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+            </symbol>
+            <symbol id="icon-facebook" viewBox="0 0 32 32">
+                <title>facebook</title>
+                <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+            </symbol>
+            <symbol id="icon-instagram" viewBox="0 0 32 32">
+                <title>instagram</title>
+                <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+                </path>
+                <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                </path>
+                <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                </path>
+            </symbol>
+            <symbol id="icon-twitter" viewBox="0 0 32 32">
+                <title>twitter</title>
+                <path
+                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+                </path>
+            </symbol>
+            <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+                <title>linkedin2</title>
+                <path
+                    d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z">
+                </path>
+                <path d="M2 12h6v18h-6v-18z"></path>
+                <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+            </symbol>
+            <symbol id="icon-message" viewBox="0 0 24 24">
+                <title>message</title>
+                <path
+                    d="M18 7c0.542 0 1 0.458 1 1v7c0 0.542-0.458 1-1 1h-8.829l-0.171 0.171v-0.171h-3c-0.542 0-1-0.458-1-1v-7c0-0.542 0.458-1 1-1h12zM18 5h-12c-1.65 0-3 1.35-3 3v7c0 1.65 1.35 3 3 3h1v3l3-3h8c1.65 0 3-1.35 3-3v-7c0-1.65-1.35-3-3-3z">
+                </path>
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 32 32">
+                <title>phone</title>
+                <path
+                    d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <title>Danilo</title>
+</head>
+
+
+<body>
+
+    <div id='main-wrapper' class="main-wrapper">
+        <div id='navigation' class="navigation">
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__sidepanel">
+                <a class='navigation__close' href="#main-wrapper">X</a>
+                <ul class="navigation__links">
+                    <li><a href="#" class="navigation__link">Home</a></li>
+                    <li><a href="#" class="navigation__link">Services</a></li>
+                    <li><a href="#" class="navigation__link">Features</a></li>
+                    <li><a href="#" class="navigation__link">Portfolio</a></li>
+                    <li><a href="#" class="navigation__link">Blog</a></li>
+                    <li><a href="#" class="navigation__link">Contact</a></li>
+                </ul>
+            </div>
+           
+           
+        </div>
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <a href="#navigation" class="header__menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a>
+                    <a href="#" class="header__link-left">Dart Agency</a>
+
+                    <ul class="header__links">
+                        <li><a href="#" class="header__link">Home</a></li>
+                        <li><a href="#" class="header__link">Services</a></li>
+                        <li><a href="#" class="header__link">Features</a></li>
+                        <li><a href="#" class="header__link">Portfolio</a></li>
+                        <li><a href="#" class="header__link">Blog</a></li>
+                        <li><a href="#" class="header__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__content">
+                    <h1 class="header__heading">Creative agency</h1>
+                    <p class="header__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                    </p>
+
+                    <a href="#" class="btn">Learn More</a>
+                    <a href="#" class="btn">Purchase</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="service">
+            <h2 class="service__heading">Services we offer</h2>
+            <p class="service__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="service__grid">
+                <div class="service__box service__box-1">
+                    <i class="material-icons">trending_up</i>
+                    <h4>Growing Business</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="service__box service__box-2">
+                    <i class="material-icons">access_time</i>
+                    <h4>Save Time</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="service__box service__box-3">
+                    <i class="material-icons">group</i>
+                    <h4>Free Support</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="service__box service__box-4">
+                    <i class="material-icons">apps</i>
+                    <h4>Responsive Design</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+
+                <div class="service__box service__box-5">
+                    <i class="material-icons">adjust</i>
+                    <h4>Target Fill Up</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+                <div class="service__box service__box-6">
+                    <i class="material-icons">local_cafe</i>
+                    <h4>Graphic Design</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__center">
+                <h2 class="contact__heading">We Always Work To Make A Difference</h2>
+                <p class="contact__paragraph">
+                    If you like our works and have a project,contact us now
+                </p>
+                <a href="#" class="btn">Contact us</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 class="about__heading">about dart agency</h2>
+            <p class="about__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="about__flex">
+                <img src="assets/images/about-pic.png" alt="" />
+
+                <div class="about__box">
+                    <h3>We Believe<br />The Simple Design</h3>
+                    <p>
+                        Trusted comes with tons of custom widgets, color options, font
+                        control and much more
+                    </p>
+                    <p>
+                        We aim to eliminate the task of dividing your project between
+                        different agency, corporate and business template. We are a
+                        company that offers services for our clients to solve problems and
+                        planing strategies for humanity all over the world.
+                    </p>
+
+                    <a href="#" class="btn btn--blue">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="letsGo" class="letsGo">
+            <div class="letsGo__center">
+                <h2 class="letsGo__heading">LET’S MAKE SOMETHING GREAT TOGETHER</h2>
+                <p class="letsGo__paragraph">
+                    We aim to eliminate the task of dividing your project between
+                    different agency between different agency, corporate
+                </p>
+                <a href="#letsGo" class="btn">Lets go</a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2 class="featured__heading">Featured project</h2>
+            <p class="featured__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="featured__grid">
+                <div class="featured__box featured__box-1">
+                    <img src="assets/images/featured-project-pic1.png" alt="" />
+
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="featured__box featured__box-2">
+                    <img src="assets/images/featured-project-pic2.png" alt="" />
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="featured__box featured__box-3">
+                    <img src="assets/images/featured-project-pic3.png" alt="" />
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="featured__box featured__box-4">
+                    <img src="assets/images/featured-project-pic4.png" alt="" />
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="featured__box featured__box-5">
+                    <img src="assets/images/featured-project-pic5.png" alt="" />
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="featured__box featured__box-6">
+                    <img src="assets/images/featured-project-pic6.png" alt="" />
+                    <div class="featured__wrapper">
+                        <h4>Design</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <a target="_blank" href="https://www.youtube.com/embed/WP_vM301VZA?autoplay=0">
+                <img src="assets/images/video-icon.png" alt="" />
+            </a>
+        </section>
+
+        <section class="team">
+            <h2 class="team__heading">Creative team</h2>
+            <p class="team__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="team__flex">
+                <div class="team__box">
+                    <img src="assets/images/team-pic1.png" alt="" />
+                    <h4>Elodia S. Keefe</h4>
+                    <p>Founder</p>
+                </div>
+                <div class="team__box">
+                    <img src="assets/images/team-pic2.png" alt="" />
+                    <h4>
+                        Sherryl D. Trent
+                    </h4>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team__box">
+                    <img src="assets/images/team-pic3.png" alt="" />
+                    <h4>Dorothy J. Cook</h4>
+                    <p>UI Specialist</p>
+                </div>
+                <div class="team__box">
+                    <img src="assets/images/team-pic4.png" alt="" />
+                    <h4>Stuart D. Mahaffey</h4>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2 class="pricing__heading">Our Pricing</h2>
+            <p class="pricing__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="pricing__grid">
+                <div class="pricing__box pricing__box-1">
+                    <h4>Silver</h4>
+                    <h1>$<span class="pricing__span">459</span>/Year</h1>
+                    <p>Up to 5 users</p>
+                    <p>Max 100 items/month</p>
+                    <p>Unlimited queries</p>
+                    <p>Full statistics</p>
+                    <a href="#" class="btn">Get this plan</a>
+                </div>
+                <div class="pricing__box pricing__box-2">
+                    <h4>Gold</h4>
+                    <h1>$<span class="pricing__span">249</span>/Year</h1>
+                    <p>Up to 10 users</p>
+                    <p>Max 200 items/month</p>
+                    <p>Unlimited queries</p>
+                    <p>Full statistics</p>
+                    <a href="#" class="btn">Get this plan</a>
+                </div>
+                <div class="pricing__box pricing__box-3">
+                    <h2>Recommended</h2>
+                    <h4>Platinium</h4>
+                    <h1>$<span class="pricing__span">459</span>/Year</h1>
+                    <p>Up to 5 users</p>
+                    <p>Unlimited items</p>
+                    <p>Unlimited queries</p>
+                    <p>Full statistics</p>
+                    <a href="#" class="btn">Get this plan</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview">
+            <ul class="overview__list">
+                <li>
+                    <h1>
+                        550
+                    </h1>
+                    <p>
+                        Cup of coffee
+                    </p>
+                </li>
+                <li>
+                    <h1>
+                        800
+                    </h1>
+                    <p>
+                        projects done
+                    </p>
+                </li>
+
+                <li>
+                    <h1>
+                        400
+                    </h1>
+                    <p>
+                        happy clients
+                    </p>
+                </li>
+
+                <li>
+                    <h1>
+                        3550
+                    </h1>
+                    <p>
+                        awards win
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="clients">
+            <h2 class="clients__heading">what clients say?</h2>
+            <p class="clients__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="clients__box">
+                <img src="assets/images/slider-image.png" alt="" />
+                <p>
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit.
+                </p>
+                <h3>Sheryl D</h3>
+                <p>UI Design Agency</p>
+            </div>
+        </section>
+
+        <section class="keepIn">
+            <h2 class="keepIn__heading">
+                Keep in touch with us! We are available for 24 hours
+            </h2>
+            <a href="#" class="btn">contact us</a>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2 class="blog__heading">our blog</h2>
+            <p class="blog__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="blog__flex">
+                <div class="blog__box">
+                    <img src="assets/images/blog-pic1.png" alt="" />
+
+                    <div class="blog__wrapper">
+                        <h3>Global Traffic Search</h3>
+                        <p>By Jhon Doe / 12 July, 2017 / 2 Comments</p>
+                        <a href="#blog">
+                            <h4>READ MORE</h4>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="blog__box">
+                    <img src="assets/images/blog-pic2.png" alt="" />
+                    <div class="blog__wrapper">
+                        <h3>Global Traffic Search</h3>
+                        <p>By Jhon Doe / 12 July, 2017 / 2 Comments</p>
+                        <a href="#blog">
+                            <h4>READ MORE</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog__box">
+                    <img src="assets/images/blog-pic3.png" alt="" />
+                    <div class="blog__wrapper">
+                        <h3>Global Traffic Search</h3>
+                        <p>By Jhon Doe / 12 July, 2017 / 2 Comments</p>
+                        <a href="#blog">
+                            <h4>READ MORE</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__flex">
+                <div class="footer__box footer__box-1">
+                    <h2 class="footer__heading">dart agency</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore
+                    </p>
+                    <ul>
+                        <li>
+
+                            <a href="#"><svg class="icon icon-facebook">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="#"><svg class="icon icon-instagram">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+
+                        <li><a href="#"> <svg class="icon icon-twitter">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg></a></li>
+
+                        <li> <a href="#"> <svg class="icon icon-linkedin2">
+                                    <use xlink:href="#icon-linkedin2"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box-2">
+                    <h2 class="footer__heading">quick link</h2>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box-3">
+                    <h2 class="footer__heading">contact us</h2>
+                    <ul>
+                        <li>
+                            <svg class="icon icon-message">
+                                <use xlink:href="#icon-message"></use>
+                            </svg>
+                            <a href="#">dartagency@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="icon icon-phone">
+                                <use xlink:href="#icon-phone"></use>
+                            </svg>
+                            <a href="#">+0123-345-6789</a>
+                        </li>
+                    </ul>
+                    <h4>Subscribe</h4>
+
+                    <form action="#">
+                        <div class="wrapper">
+                            <input type="email" placeholder="Enter Your Email" />
+                            <button class="footer__btn" type="submit">
+                                <img src="assets/images/send-icon.png" alt="" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer__box footer__box-4">
+                    <h2 class="footer__heading">instagram</h2>
+
+                    <div class="photos">
+                        <img src="assets/images/instagram-pic1.png" alt="" />
+                        <img src="assets/images/instagram-pic2.png" alt="" />
+                        <img src="assets/images/instagram-pic3.png" alt="" />
+                        <img src="assets/images/instagram-pic4.png" alt="" />
+                        <img src="assets/images/instagram-pic5.png" alt="" />
+                        <img src="assets/images/instagram-pic6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__line">
+                &nbsp;
+            </div>
+
+            <p class="footer__copyright">
+                &copy; Copyright 2020 by Danilo Dukic. All rights reserved
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
