@@ -52,22 +52,23 @@
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        transition: all .2s ease-in;
+        transition: all .3s ease-in;
 
         &:hover {
             color: #0D00C9;
             text-decoration: none;
-
         }
     }
 
     &__link {
         padding: 0 15px;
 
+
+
         &-left {
             font-size: 26px;
             font-weight: bold;
-            margin-right: 150px;
+            margin-right: 20vw;
         }
     }
 

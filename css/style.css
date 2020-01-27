@@ -681,7 +681,7 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    transition: all .2s ease-in; }
+    transition: all .3s ease-in; }
     .header__link:hover, .header__link-left:hover {
       color: #0D00C9;
       text-decoration: none; }
@@ -690,7 +690,7 @@
     .header__link-left {
       font-size: 26px;
       font-weight: bold;
-      margin-right: 150px; }
+      margin-right: 20vw; }
   .header__content {
     position: relative;
     z-index: 3;
