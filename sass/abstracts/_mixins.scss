@@ -5,7 +5,6 @@
     margin: 20px 0 25px 0;
     font-weight: bold;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
 
     @media only screen and (max-width:768px) {
         padding: 15px 0 20px 0;
@@ -23,7 +22,6 @@
 @mixin heading-bg {
     font-size: 35px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 
     @media only screen and (max-width:768px) {
         font-size: 28px;
@@ -72,4 +70,28 @@
     width: 100%;
     background-color: $bg-light-blue;
     z-index: 1;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+
+@mixin color-white {
+    color: white;
+}
+
+@mixin position-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition2ms {
+    transition: all .2s ease-in-out;
+}
+
+@mixin margin0auto {
+    margin: 0 auto;
 }

@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inconsolata', monospace;
+
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+    text-decoration: none;
+}

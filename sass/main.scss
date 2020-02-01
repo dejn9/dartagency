@@ -1,9 +1,15 @@
+@import 'base/reset';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
 @import 'pages/home';
 
+@import 'components/btn';
+
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navigation';
+@import 'layout/grid';
+
 @import 'base/base';
+@import 'base/typography';

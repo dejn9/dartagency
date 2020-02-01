@@ -1,0 +1,523 @@
+.header {
+    &__heading {
+        font-size: 50px;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        max-width: 600px;
+        @include margin0auto;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+.service {
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__box {
+        h4 {
+            margin: 25px 0 15px 0;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        p {
+
+            margin-bottom: 10px;
+            color: #8a8a8a;
+            font-size: 15px;
+
+        }
+    }
+}
+
+.contact {
+    &__heading {
+        @include heading-bg;
+        margin-top: 70px;
+    }
+
+    &__paragraph {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+}
+
+.about {
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__box {
+        h3 {
+            padding-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #4f4f4f;
+        }
+
+        p {
+            color: #848484;
+            font-size: 17px;
+            font-family: 'Roboto-light', sans-serif;
+        }
+
+        p:first-of-type {
+            margin: 25px 0 40px 0;
+        }
+
+        p:last-of-type {
+            margin-bottom: 30px;
+        }
+
+        a {
+            background-color: #00AAFE;
+            color: white;
+            filter: none;
+
+            &:hover {
+                border-color: rgba(5, 180, 249, 0.9);
+            }
+        }
+    }
+}
+
+.letsGo {
+    &__heading {
+        @include heading-bg;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__paragraph {
+        max-width: 590px;
+        @include margin0auto;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.featured {
+    &__paragraph {
+        @include paragraph;
+    }
+
+    p {
+        color: #7d7d7d;
+    }
+
+    &__heading {
+        @include heading;
+    }
+
+    &__wrapper {
+        h4 {
+            text-transform: uppercase;
+            margin: 10px 0;
+            color: #4f4f4f;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.team {
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__box {
+        h4 {
+            font-size: 20px;
+            color: #4f4f4f;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            columns: #8e8e8e;
+            font-size: 17px;
+        }
+
+    }
+}
+
+.pricing {
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__box {
+        h4 {
+            font-size: 22px;
+            margin: 0 10px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            border: 2px solid #7d7d7d;
+            color: #7d7d7d;
+            filter: none;
+        }
+
+        &-3 {
+            h2 {
+                position: absolute;
+                right: -40px;
+                top: 30px;
+                background-image: linear-gradient(to right, lightblue, blue);
+                transform: rotateZ(45deg);
+                width: 100%;
+                max-width: 180px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.clients {
+
+    &__heading {
+        @include heading;
+    }
+
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__box {
+        p {
+            color: #7e7e7e;
+        }
+
+        p:first-of-type {
+            width: 90%;
+            @include margin0auto;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+
+        p:last-of-type {
+            padding-bottom: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.keepIn {
+
+    &__heading {
+        @include heading-bg;
+        margin: 60px 0 10px 0;
+        text-align: center;
+    }
+
+    a {
+        filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.77));
+        max-width: 200px;
+        @include margin0auto;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+    }
+}
+
+.blog {
+    &__paragraph {
+        @include paragraph;
+    }
+
+    &__heading {
+        @include heading;
+    }
+
+    &__box {
+        &:hover h4 {
+            color: #00aafe;
+        }
+
+        h3 {
+            margin: 20px 0 10px 0;
+            font-size: 22px;
+            color: #4f4f4f;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: #7d7d7d;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+}
+
+.overview {
+    &__list {
+        li {
+
+            h1 {
+                font-size: 45px;
+                margin: 20px 0 10px 0;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.footer {
+    &__heading {
+        padding-top: 80px;
+        margin: 20px 0 25px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__box {
+        p {
+            margin-bottom: 20px;
+        }
+
+        &-1 {
+            p {
+                width: 80%;
+            }
+
+            a {
+                @include transition2ms;
+            }
+        }
+
+        &-2 {
+            a {
+                @include color-white;
+                display: inline-block;
+                padding-bottom: 10px;
+                @include transition2ms;
+
+                &:hover {
+                    color: $bg-light-blue;
+                }
+            }
+
+        }
+
+        &-3 {
+            a {
+                margin-left: 10px;
+                @include color-white;
+                font-size: 14px;
+            }
+
+            h4 {
+                margin: 10px 0 20px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .blog {
+        &__box {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .footer {
+        &__heading {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .header {
+        &__link {
+            &-left {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .header {
+        &__link {
+            font-size: 16px;
+
+            &-left {
+                display: none;
+            }
+        }
+
+        &__heading {
+            font-size: 40px;
+        }
+    }
+
+    .letsGo {
+        &__paragraph {
+            font-size: 18px;
+        }
+    }
+
+    .featured {
+        &__wrapper {
+            h4 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .team {
+        &__box {
+            h4 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+
+        }
+    }
+
+    .overview {
+        &__list {
+            li {
+                h1 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        &__paragraph {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .service {
+        &__box {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .letsGo {
+        &__paragraph {
+            font-size: 15px;
+        }
+    }
+
+    .featured {
+        &__wrapper {
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .header {
+        &__heading {
+            font-size: 25px;
+        }
+
+        &__paragraph {
+            font-size: 20px;
+        }
+    }
+
+    .contact {
+        &__heading {
+            max-width: 300px;
+        }
+
+        &__paragraph {
+            width: 300px;
+        }
+    }
+}
